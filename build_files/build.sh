@@ -2,7 +2,6 @@
 
 set -ouex pipefail
 
-/ctx/build_files/image-info.sh
 
 ### Install packages
 
