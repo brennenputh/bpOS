@@ -12,6 +12,7 @@ set -ouex pipefail
 
 dnf5 -y copr enable ublue-os/packages
 dnf5 -y copr enable atim/starship
+dnf5 -y copr enable che/nerd-fonts
 
 # Base System Packages
 dnf5 install -y \
@@ -20,6 +21,7 @@ dnf5 install -y \
   fira-code-fonts \
   fish \
   gcc \
+  kitty \
   make \
   nerd-fonts \
   python3-pip \
@@ -30,6 +32,9 @@ dnf5 install -y \
   uupd \
   wl-clipboard
 
+dnf5 -y copr disable ublue-os/packages
+dnf5 -y copr disable atim/starship
+dnf5 -y copr disable che/nerd-fonts
 # Use a COPR Example:
 #
 # dnf5 -y copr enable ublue-os/staging
