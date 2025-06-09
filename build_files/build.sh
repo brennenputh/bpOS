@@ -37,6 +37,7 @@ dnf5 install -y \
   uupd \
   fontawesome-fonts \
   wl-clipboard \
+  ublue-brew \
   zoxide
 
 dnf5 -y copr disable ublue-os/packages
