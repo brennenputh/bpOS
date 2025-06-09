@@ -21,20 +21,22 @@ dnf5 install -y \
   fira-code-fonts \
   fish \
   gcc \
+  htop \
   kitty \
   make \
+  neovim \
   nerd-fonts \
-  python3-pip \
+  playerctl \
   python3 \
+  python3-pip \
   rofi-wayland \
+  rustup \
   starship \
   sway \
   tailscale \
   uupd \
   wl-clipboard \
-  zoxide \
-  neovim \
-  rustup
+  zoxide
 
 dnf5 -y copr disable ublue-os/packages
 dnf5 -y copr disable atim/starship
