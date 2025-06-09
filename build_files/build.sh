@@ -25,12 +25,16 @@ dnf5 install -y \
   make \
   nerd-fonts \
   python3-pip \
+  python3 \
   rofi-wayland \
   starship \
   sway \
   tailscale \
   uupd \
-  wl-clipboard
+  wl-clipboard \
+  zoxide \
+  neovim \
+  rustup
 
 dnf5 -y copr disable ublue-os/packages
 dnf5 -y copr disable atim/starship
