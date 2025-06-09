@@ -35,6 +35,7 @@ dnf5 install -y \
   sway \
   tailscale \
   uupd \
+  fontawesome-fonts \
   wl-clipboard \
   zoxide
 
