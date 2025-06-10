@@ -2,7 +2,6 @@
 
 set -ouex pipefail
 
-
 ### Install packages
 
 # Packages can be installed from any enabled yum repo on the image.
@@ -45,5 +44,6 @@ dnf5 -y copr disable ublue-os/packages
 dnf5 -y copr disable atim/starship
 dnf5 -y copr disable che/nerd-fonts
 
+systemctl enable uupd.timer
 systemctl enable brew-setup.service
 systemctl enable podman.socket
