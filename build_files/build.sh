@@ -16,10 +16,12 @@ dnf5 -y copr enable che/nerd-fonts
 
 # Base System Packages
 dnf5 install -y \
+  alacritty \
   bootc \
   fastfetch \
   fira-code-fonts \
   fish \
+  fontawesome-fonts \
   gcc \
   htop \
   kitty \
@@ -34,10 +36,9 @@ dnf5 install -y \
   starship \
   sway \
   tailscale \
-  uupd \
-  fontawesome-fonts \
-  wl-clipboard \
   ublue-brew \
+  uupd \
+  wl-clipboard \
   zoxide
 
 dnf5 -y copr disable ublue-os/packages
