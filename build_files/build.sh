@@ -12,6 +12,7 @@ set -ouex pipefail
 dnf5 -y copr enable ublue-os/packages
 dnf5 -y copr enable atim/starship
 dnf5 -y copr enable che/nerd-fonts
+dnf5 -y copr enable trs-sod/swaylock-effects
 
 # Base System Packages
 dnf5 install -y \
@@ -34,6 +35,7 @@ dnf5 install -y \
   rustup \
   starship \
   sway \
+  swaylock-effects \
   tailscale \
   ublue-brew \
   uupd \
