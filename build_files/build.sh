@@ -35,12 +35,17 @@ dnf5 install -y \
   rustup \
   starship \
   sway \
-  swaylock-effects \
   tailscale \
   ublue-brew \
   uupd \
   wl-clipboard \
   zoxide
+
+dnf5 remove -y \
+  swaylock
+
+dnf5 install -y \
+  swaylock-effects
 
 dnf5 -y copr disable ublue-os/packages
 dnf5 -y copr disable atim/starship
