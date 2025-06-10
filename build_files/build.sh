@@ -27,6 +27,7 @@ dnf5 install -y \
   kitty \
   make \
   neovim \
+  papirus-icon-theme \
   nerd-fonts \
   playerctl \
   python3 \
