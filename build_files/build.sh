@@ -27,6 +27,7 @@ dnf5 install -y \
   kitty \
   make \
   neovim \
+  network-manager-applet \
   NetworkManager-tui \
   papirus-icon-theme \
   nerd-fonts \
