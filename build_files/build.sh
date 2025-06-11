@@ -59,4 +59,4 @@ systemctl enable brew-setup.service
 systemctl enable podman.socket
 
 # Copy system files to container
-rsync -rvK /ctx/system_files/ /
+# rsync -rvK /ctx/system_files/ /
