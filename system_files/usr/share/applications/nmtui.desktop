@@ -1,0 +1,8 @@
+[Desktop Entry]
+Type=Application
+NoDisplay=false
+Terminal=true
+Exec=nmtui
+Name=Network Manager TUI
+Comment=Network Manager Terminal UI
+Categories=Utility;

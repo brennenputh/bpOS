@@ -27,6 +27,7 @@ dnf5 install -y \
   kitty \
   make \
   neovim \
+  NetworkManager-tui \
   papirus-icon-theme \
   nerd-fonts \
   playerctl \
@@ -55,3 +56,6 @@ dnf5 -y copr disable che/nerd-fonts
 systemctl enable uupd.timer
 systemctl enable brew-setup.service
 systemctl enable podman.socket
+
+# Copy system files to container
+rsync -rvK /ctx/system_files/ /
