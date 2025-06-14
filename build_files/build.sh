@@ -44,6 +44,7 @@ dnf5 install -y \
   tailscale \
   ublue-brew \
   uupd \
+  waybar \
   wl-clipboard \
   zoxide
 
