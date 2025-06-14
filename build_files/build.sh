@@ -24,6 +24,7 @@ dnf5 install -y \
   fish \
   fontawesome-fonts \
   gcc \
+  grim \
   htop \
   kitty \
   make \
@@ -37,6 +38,7 @@ dnf5 install -y \
   python3-pip \
   rofi-wayland \
   rustup \
+  slurp \
   starship \
   sway \
   tailscale \
