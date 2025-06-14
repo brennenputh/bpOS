@@ -18,6 +18,7 @@ dnf5 -y copr enable trs-sod/swaylock-effects
 dnf5 install -y \
   alacritty \
   bootc \
+  dunst \
   fastfetch \
   fira-code-fonts \
   fish \
@@ -53,6 +54,7 @@ dnf5 install -y \
 dnf5 -y copr disable ublue-os/packages
 dnf5 -y copr disable atim/starship
 dnf5 -y copr disable che/nerd-fonts
+dnf5 -y copr disable trs-sod/swaylock-effects
 
 systemctl enable uupd.timer
 systemctl enable brew-setup.service
