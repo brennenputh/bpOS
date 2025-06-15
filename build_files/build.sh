@@ -8,6 +8,7 @@ IMAGE_PRETTY_NAME="bpOS"
 IMAGE_NAME="bpos"
 BASE_IMAGE_NAME="ublue-main"
 IMAGE_LIKE="fedora"
+FEDORA_MAJOR_VERSION="42"
 VERSION="${VERSION:-00.00000000}"
 
 sed -i "s|^VARIANT_ID=.*|VARIANT_ID=$IMAGE_NAME|" /usr/lib/os-release
