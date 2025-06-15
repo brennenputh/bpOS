@@ -2,6 +2,28 @@
 
 set -ouex pipefail
 
+### Add OS info to image.
+
+IMAGE_PRETTY_NAME="bpOS"
+IMAGE_NAME="bpos"
+IMAGE_LIKE="fedora"
+VERSION="${VERSION:-00.00000000}"
+
+sed -i "s|^VARIANT_ID=.*|VARIANT_ID=$IMAGE_NAME|" /usr/lib/os-release
+sed -i "s|^PRETTY_NAME=.*|PRETTY_NAME=\"${IMAGE_PRETTY_NAME} (Version: ${VERSION} / FROM Fedora ${BASE_IMAGE_NAME^} $FEDORA_MAJOR_VERSION)\"|" /usr/lib/os-release
+sed -i "s|^NAME=.*|NAME=\"$IMAGE_PRETTY_NAME\"|" /usr/lib/os-release
+sed -i "s|^ID=fedora|ID=${IMAGE_PRETTY_NAME,}\nID_LIKE=\"${IMAGE_LIKE}\"|" /usr/lib/os-release
+sed -i "s|^VERSION=.*|VERSION=\"${VERSION} (${BASE_IMAGE_NAME^})\"|" /usr/lib/os-release
+sed -i "s|^OSTREE_VERSION=.*|OSTREE_VERSION=\'${VERSION}\'|" /usr/lib/os-release
+
+# Added in systemd 249.
+# https://www.freedesktop.org/software/systemd/man/latest/os-release.html#IMAGE_ID=
+echo "IMAGE_ID=\"${IMAGE_NAME}\"" >> /usr/lib/os-release
+echo "IMAGE_VERSION=\"${VERSION}\"" >> /usr/lib/os-releae
+
+# Fix issues caused by ID no longer being fedora
+sed -i "s|^EFIDIR=.*|EFIDIR=\"fedora\"|" /usr/sbin/grub2-switch-to-blscfg
+
 ### Install packages
 
 # Packages can be installed from any enabled yum repo on the image.
