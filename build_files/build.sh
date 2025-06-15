@@ -6,6 +6,7 @@ set -ouex pipefail
 
 IMAGE_PRETTY_NAME="bpOS"
 IMAGE_NAME="bpos"
+BASE_IMAGE_NAME="ublue-main"
 IMAGE_LIKE="fedora"
 VERSION="${VERSION:-00.00000000}"
 
