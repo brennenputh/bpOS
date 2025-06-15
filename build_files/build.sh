@@ -33,6 +33,7 @@ dnf5 install -y \
   NetworkManager-tui \
   papirus-icon-theme \
   nerd-fonts \
+  pavucontrol \
   playerctl \
   python3 \
   python3-pip \
