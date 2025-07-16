@@ -101,8 +101,8 @@ dnf5 -y copr disable trs-sod/swaylock-effects
 systemctl enable uupd.timer
 systemctl enable brew-setup.service
 systemctl enable podman.socket
-systemctl enable tailscaled
-systemctl enable libvirtd
+systemctl enable tailscaled.service
+ssystemctl enable ublue-os-libvirt-workarounds.service
 
 # Copy system files to container
 # rsync -rvK /ctx/system_files/ /
