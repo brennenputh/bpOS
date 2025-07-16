@@ -38,26 +38,36 @@ dnf5 -y copr enable trs-sod/swaylock-effects
 dnf5 install -y \
   alacritty \
   bootc \
+  cargo \
+  clippy \
   dunst \
   fastfetch \
   fira-code-fonts \
   fish \
   fontawesome-fonts \
   gcc \
+  gcc-c++ \
+  git \
   grim \
   htop \
+  java-21-openjdk \
   kitty \
+  lua \
   make \
   neovim \
+  nerd-fonts \
   network-manager-applet \
   NetworkManager-tui \
+  openssl-devel \
   papirus-icon-theme \
-  nerd-fonts \
   pavucontrol \
   playerctl \
   python3 \
   python3-pip \
   rofi-wayland \
+  rust \
+  rustfmt \
+  rust-src \
   rustup \
   slurp \
   starship \
