@@ -62,6 +62,7 @@ dnf5 install -y \
   playerctl \
   python3 \
   python3-pip \
+  qemu \
   rofi-wayland \
   rust \
   rustfmt \
