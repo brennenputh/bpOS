@@ -36,8 +36,6 @@ dnf5 -y copr enable trs-sod/swaylock-effects
 dnf5 install -y \
   alacritty \
   bootc \
-  cargo \
-  clippy \
   dunst \
   fastfetch \
   fira-code-fonts \
@@ -64,10 +62,6 @@ dnf5 install -y \
   python3-pip \
   qemu \
   rofi-wayland \
-  rust \
-  rustfmt \
-  rust-src \
-  rustup \
   slurp \
   starship \
   sway \
