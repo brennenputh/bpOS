@@ -72,8 +72,20 @@ dnf5 install -y \
   zoxide
 
 sudo dnf5 install -y \
-  @virtualization \
-  libvirt-daemon
+  libvirt \
+  libvirt-nss \
+  qemu \
+  qemu-char-spice \
+  qemu-device-display-virtio-gpu \
+  qemu-device-display-virtio-vga \
+  qemu-img \
+  qemu-system-x86-core \
+  qemu-user-binfmt \
+  qemu-user-static \
+  ublue-os-libvirt-workarounds \
+  virt-manager \
+  virt-v2v \
+  virt-viewer
 
 dnf5 remove -y \
   swaylock
