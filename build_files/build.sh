@@ -71,7 +71,8 @@ dnf5 install -y \
   wl-clipboard \
   zoxide
 
-sudo dnf5 install @virtualization
+sudo dnf5 install -y \
+  @virtualization
 
 dnf5 remove -y \
   swaylock
