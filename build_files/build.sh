@@ -72,7 +72,8 @@ dnf5 install -y \
   zoxide
 
 sudo dnf5 install -y \
-  @virtualization
+  @virtualization \
+  libvirt-daemon-system
 
 dnf5 remove -y \
   swaylock
