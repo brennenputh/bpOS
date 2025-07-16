@@ -6,12 +6,10 @@ set -ouex pipefail
 
 IMAGE_PRETTY_NAME="bpOS"
 IMAGE_NAME="bpos"
-BASE_IMAGE_NAME="ublue-base-nvidia"
 IMAGE_LIKE="fedora"
-FEDORA_MAJOR_VERSION="42"
 
 sed -i "s|^VARIANT_ID=.*|VARIANT_ID=$IMAGE_NAME|" /usr/lib/os-release
-sed -i "s|^PRETTY_NAME=.*|PRETTY_NAME=\"${IMAGE_PRETTY_NAME} (FROM Fedora $BASE_IMAGE_NAME $FEDORA_MAJOR_VERSION)\"|" /usr/lib/os-release
+sed -i "s|^PRETTY_NAME=.*|PRETTY_NAME=\"${IMAGE_PRETTY_NAME}\"|" /usr/lib/os-release
 sed -i "s|^NAME=.*|NAME=\"$IMAGE_PRETTY_NAME\"|" /usr/lib/os-release
 sed -i "s|^ID=fedora|ID=${IMAGE_PRETTY_NAME,}\nID_LIKE=\"${IMAGE_LIKE}\"|" /usr/lib/os-release
 
