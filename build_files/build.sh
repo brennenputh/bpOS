@@ -60,7 +60,6 @@ dnf5 install -y \
   playerctl \
   python3 \
   python3-pip \
-  qemu \
   rofi-wayland \
   slurp \
   starship \
@@ -71,6 +70,8 @@ dnf5 install -y \
   waybar \
   wl-clipboard \
   zoxide
+
+sudo dnf5 install @virtualization
 
 dnf5 remove -y \
   swaylock
