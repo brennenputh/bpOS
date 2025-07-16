@@ -89,6 +89,7 @@ systemctl enable uupd.timer
 systemctl enable brew-setup.service
 systemctl enable podman.socket
 systemctl enable tailscaled
+systemctl enable libvirtd
 
 # Copy system files to container
 # rsync -rvK /ctx/system_files/ /
