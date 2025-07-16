@@ -73,7 +73,7 @@ dnf5 install -y \
 
 sudo dnf5 install -y \
   @virtualization \
-  libvirt-daemon-system
+  libvirt-daemon-qemu
 
 dnf5 remove -y \
   swaylock
