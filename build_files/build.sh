@@ -105,4 +105,4 @@ systemctl enable tailscaled.service
 systemctl enable ublue-os-libvirt-workarounds.service
 
 # Copy system files to container
-# rsync -rvK /ctx/system_files/ /
+ rsync -rvK /ctx/system_files/ /
