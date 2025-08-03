@@ -48,6 +48,7 @@ dnf5 install -y \
   ublue-brew \
   uupd \
   waybar \
+  wev \
   wl-clipboard \
   zoxide
 
