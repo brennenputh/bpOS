@@ -172,10 +172,3 @@ jobs:
           TAGS: ${{ steps.push.outputs.digest }}
           COSIGN_EXPERIMENTAL: false
           COSIGN_PRIVATE_KEY: ${{ secrets.SIGNING_SECRET }}
-      - name: Notify via Ntfy 
-        run: |-
-          curl \
-            -H "bpOS package built" \
-            -H "Content-Type: text/plain" \
-            -d $'Repo: ${{ github.repository }}\nCommit: ${{ github.sha }}\nRef: ${{ github.ref }}\nStatus: ${{ job.status}}' \
-            ${{ secrets.NTFY_URL }}
