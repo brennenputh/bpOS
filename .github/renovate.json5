@@ -9,7 +9,7 @@
   "packageRules": [
     {
       "automerge": true,
-      "matchUpdateTypes": ["pin", "pinDigest", "minor", "patch"]
+      "matchUpdateTypes": ["pin", "pinDigest", "minor", "patch", "digest"]
     },
     {
       "enabled": false,
