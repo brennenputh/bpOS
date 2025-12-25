@@ -4,7 +4,7 @@ COPY build_files /build_files
 COPY system_files /system_files
 
 # Base Image
-FROM ghcr.io/ublue-os/base-nvidia:43@sha256:ddb0eff0a86e6ae2481bc2f7bd334f6a2f981c580ffa2952486f715dad878987
+FROM ghcr.io/ublue-os/base-nvidia:43@sha256:081c5212e77c50da1b28f51a73aefc4de16f5d3dbe67bc887576e85854fd0706
 
 ## Other possible base images include:
 # FROM ghcr.io/ublue-os/bazzite:latest
