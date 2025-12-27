@@ -1,3 +1,0 @@
-#!/bin/bash
-
-xargs -a /usr/share/bpos/flatpaks.txt flatpak install -y
