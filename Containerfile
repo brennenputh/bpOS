@@ -5,7 +5,7 @@ COPY system_files /system_files
 COPY rpms /rpms
 
 # Base Image
-FROM ghcr.io/zirconium-dev/base-nvidia:43@sha256:081c5212e77c50da1b28f51a73aefc4de16f5d3dbe67bc887576e85854fd0706
+FROM ghcr.io/zirconium-dev/zirconium
 
 ## Other possible base images include:
 # FROM ghcr.io/ublue-os/bazzite:latest
