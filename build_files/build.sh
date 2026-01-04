@@ -8,7 +8,7 @@ dnf5 install -y \
 
 # Brother Printer Drivers
 dnf5 install -y \
-  /rpms/hll2395dwpdrv-4.0.0-1.i386.rpm
+  http://download.brother.com/welcome/dlf103563/hll2395dwpdrv-4.0.0-1.i386.rpm
 
 # Copy system files to container
 rsync -rvK /ctx/system_files/ /
