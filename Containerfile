@@ -5,7 +5,7 @@ COPY system_files /system_files
 COPY rpms /rpms
 
 # Base Image
-FROM ghcr.io/zirconium-dev/zirconium
+FROM ghcr.io/zirconium-dev/zirconium@sha256:01e8dba8f6a31e308c524bca42ec0ce45d72dc7770d0533038b1972647e91bb2
 
 ## Other possible base images include:
 # FROM ghcr.io/ublue-os/bazzite:latest
