@@ -4,7 +4,7 @@ COPY build_files /build_files
 COPY system_files /system_files
 
 # Base Image
-FROM ghcr.io/zirconium-dev/zirconium
+FROM ghcr.io/zirconium-dev/zirconium@sha256:f8ed6e3478beb33eefa17854f0d206e6f06956057f5d1877dfe21768a6c4d58b
 
 ## Other possible base images include:
 # FROM ghcr.io/ublue-os/bazzite:latest
