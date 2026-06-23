@@ -2,8 +2,6 @@
 
 set -ouex pipefail
 
-dnf install -y dnf5-plugins
-
 # GlobalProtect
 dnf copr enable -y yuezk/globalprotect-openconnect
 dnf install -y globalprotect-openconnect
