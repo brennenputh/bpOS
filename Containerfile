@@ -9,7 +9,7 @@ COPY system_files /system_files
 FROM ghcr.io/ublue-os/akmods:coreos-stable-"${FEDORA_VERSION}" AS akmods
 FROM ghcr.io/ublue-os/akmods-zfs:coreos-stable-"${FEDORA_VERSION}" AS akmods-zfs
 
-FROM ghcr.io/zirconium-dev/zirconium@sha256:051ab061c0e805b9f69dd82bbecb0840e94a6dea80bf0c4aceaa1caf53d60518 AS base
+FROM ghcr.io/zirconium-dev/zirconium@sha256:a6dc5dad2f2a7f2ded4f324d1a3c1ccd882f43f466be16ad16dc11a51e0b6e69 AS base
 
 ## Other possible base images include:
 # FROM ghcr.io/ublue-os/bazzite:latest
