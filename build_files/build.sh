@@ -3,7 +3,7 @@
 set -ouex pipefail
 
 # usbip
-sudo dnf install usbip-devel
+sudo dnf install -y usbip-devel
 
 # GlobalProtect
 dnf copr enable -y yuezk/globalprotect-openconnect
